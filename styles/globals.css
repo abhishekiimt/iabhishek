@@ -1,0 +1,99 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+
+header{
+  width: 100%;
+  background: #111;
+  position: sticky;
+  top: 0;
+  
+}
+
+* {
+  
+  scroll-behavior: smooth;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+footer{
+  min-height: 20vh;
+  width: 100%;
+  background: #111;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.nav-menu {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.picture{
+  height: 30vh;
+  width: 100%;
+}
+.picture img{
+  height: 100%;
+}
+
+.progress-bar {
+  background-color: whiteSmoke;
+  border-radius: 2px;
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.25) inset;
+
+  width: 250px;
+  height: 20px;
+  
+  position: relative;
+  display: block;
+}
+  
+.progress-bar > span {
+  background-color: blue;
+  border-radius: 2px;
+
+  display: block;
+  text-indent: -9999px;
+}
+
+
+@media screen and (max-width:768px){
+  .nav-menu{
+    width: 50%;
+  }
+  
+.nav-menu {
+  background-color: #111;
+  width: 25rem;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  flex-flow: column;
+  justify-content: space-evenly;
+  position: fixed;
+  top: 0;
+  right: -100%;
+  transition: .5s;
+}
+
+.nav-menu.active {
+  right: 0;
+  transition: 1s;
+}
+}
